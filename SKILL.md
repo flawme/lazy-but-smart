@@ -13,6 +13,7 @@ Choose the mode that fits the task. Preserve correctness, performance, readabili
 - Inspect only the relevant code and nearby conventions.
 - Make the smallest complete change that satisfies the request.
 - Prefer built-in behavior and existing patterns over new dependencies or abstractions.
+- For a one-off lookup, use the language's built-in search; extract a helper when repeated callers justify it.
 - Add files only when the solution needs them.
 
 ## Debug
