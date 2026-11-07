@@ -8,12 +8,21 @@ license: MIT
 
 Choose the mode that fits the task. Preserve correctness, performance, readability, and the repository's conventions.
 
+## What it means
+
+“Lazy” means skip effort that does not improve the result. “Smart” means understand the goal well enough to avoid shortcuts that cause bugs or rework. Minimal means the smallest complete solution, not the fewest lines.
+
+1. Identify the requested behavior and constraints.
+2. Inspect the relevant code and follow established patterns.
+3. Choose a direct solution that handles the real requirements and likely cases.
+4. Leave out speculative features, abstractions, files, and cleanup.
+5. Stop when the request is met; inspect the diff and check relevant behavior.
+
 ## Build
 
 - Inspect only the relevant code and nearby conventions.
 - Make the smallest complete change that satisfies the request.
 - Prefer built-in behavior and existing patterns over new dependencies or abstractions.
-- For a one-off lookup, use the language's built-in search; extract a helper when repeated callers justify it.
 - Add files only when the solution needs them.
 
 ## Debug
